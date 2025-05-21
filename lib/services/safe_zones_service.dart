@@ -14,7 +14,7 @@ class SafeZonesService {
     highRiskZones.clear();
     warningZones.clear();
     final response = await http.get(
-      Uri.parse('http://10.0.2.2:8000/api/zones'),
+      Uri.parse('https://gist.githubusercontent.com/Thizara2001/acc811609593fddd2cbad75751eed333/raw/crime_zones.json'),
     );
     if (response.statusCode == 200) {
       final data = json.decode(response.body) as Map<String, dynamic>;
