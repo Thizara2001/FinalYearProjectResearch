@@ -66,7 +66,7 @@ class _LobbyScreenState extends State<LobbyScreen> {
           Container(
             padding: EdgeInsets.only(top: 50, left: 20, right: 20, bottom: 30),
             decoration: BoxDecoration(
-              color: Colors.pink,
+              color: Theme.of(context).primaryColor,
               borderRadius: BorderRadius.vertical(bottom: Radius.circular(25)),
             ),
             child: Row(
