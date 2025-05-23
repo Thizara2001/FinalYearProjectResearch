@@ -14,12 +14,12 @@ class SupportScreen extends StatelessWidget {
   }
 
   void _launchPhone() async {
-    final Uri phoneLaunchUri = Uri(scheme: 'tel', path: '+1234567890');
+    final Uri phoneLaunchUri = Uri(scheme: 'tel', path: '119');
     await launchUrl(phoneLaunchUri);
   }
 
   void _launchAddress() async {
-    final Uri mapUri = Uri.parse('https://maps.app.goo.gl/4FNY5WMAbpX9Fiwb7');
+    final Uri mapUri = Uri.parse('https://maps.app.goo.gl/cNbroGJJ44Gn2gBCA');
     await launchUrl(mapUri);
   }
 
@@ -52,13 +52,13 @@ class SupportScreen extends StatelessWidget {
               const SizedBox(height: 16),
               ElevatedButton.icon(
                 icon: const Icon(Icons.phone),
-                label: const Text('Call: +1 234 567 890'),
+                label: const Text('Call: 119'),
                 onPressed: _launchPhone,
               ),
               const SizedBox(height: 16),
               ElevatedButton.icon(
                 icon: const Icon(Icons.location_on),
-                label: const Text('123 Main St, YourCity'),
+                label: const Text('Hospital'),
                 onPressed: _launchAddress,
               ),
               const SizedBox(height: 32),
